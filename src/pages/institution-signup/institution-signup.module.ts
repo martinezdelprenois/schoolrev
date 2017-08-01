@@ -10,4 +10,9 @@ import { InstitutionSignupPage } from './institution-signup';
     IonicPageModule.forChild(InstitutionSignupPage),
   ],
 })
-export class InstitutionSignupPageModule {}
+export class InstitutionSignupPageModule {
+	todo = {}
+  logForm() {
+    console.log(this.todo)
+  }
+}
