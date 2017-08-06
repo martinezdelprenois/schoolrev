@@ -17,26 +17,30 @@
 <form (ngSubmit)="logForm()">
  <ion-item>
         <ion-label>Institution</ion-label>
-      
+      <ion-input input type="text" name="Institution" ngModel  required> </ion-input>
       </ion-item>
 
       <ion-item>
 <ion-label> Personal Email </ion-label>
+<ion-input input type="text" name="Persoanl Email" ngModel required> </ion-input>
       </ion-item>
 
       <ion-item>
 <ion-label> Password </ion-label>
+<ion-input input type="Password" name="Password" ngModel required> </ion-input>
       </ion-item>
 
       <ion-item>
 <ion-label> Website </ion-label>
+<ion-input input type="text" name="Website" ngModel required> </ion-input>
       </ion-item>
 
       <ion-item>
 <ion-label> Index Number </ion-label>
+<ion-input input type="text" name="Index Number" ngModel required> </ion-input>
       </ion-item>
 
-      
+      <ion-item>
 <ion-label> Education Level</ion-label>
 <ion-select [(ngModel)]="edu-level" [ngModelOptions]="{standalone: true}">
     <ion-option value="pre-school">Pre-school</ion-option>
@@ -45,17 +49,20 @@
     <ion-option value="uni">University</ion-option>
 
   </ion-select>
-   
+   </ion-item>
 
-      
+      <ion-item>
 <ion-label> Category </ion-label>
-      <ion-select [(ngModel)] = "cat" [ngModelOptions]= "{standalone: true}">
-<ion-option value="private"> Private </ion-option>
-<ion-option value="gov"> Government </ion-option>
-<ion-option value="international"> International </ion-option>
+  <ion-select [(ngModel)]="cat" [ngModelOptions]="{standalone: true}">
+    <ion-option value="pri">Private</ion-option>
+    <ion-option value="gov">Government</ion-option>
+    <ion-option value="int">International</ion-option>
+    
 
-      </ion-select>
-            <button ion-button type="submit" block> Submit </button>
+  </ion-select>
+</ion-item>
+    
+            <button ion-button type="submit" block > Submit </button>
 
 </form>
 

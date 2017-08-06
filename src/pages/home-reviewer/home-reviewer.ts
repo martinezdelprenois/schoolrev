@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { HomeSchoolPage} from '../home-school/home-school';
-
 /**
- * Generated class for the InstitutionSignupPage page.
+ * Generated class for the HomeReviewerPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
@@ -12,21 +10,16 @@ import { HomeSchoolPage} from '../home-school/home-school';
 
 @IonicPage()
 @Component({
-  selector: 'page-institution-signup',
-  templateUrl: 'institution-signup.html',
+  selector: 'page-home-reviewer',
+  templateUrl: 'home-reviewer.html',
 })
-export class InstitutionSignupPage {
+export class HomeReviewerPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad InstitutionSignupPage');
+    console.log('ionViewDidLoad HomeReviewerPage');
   }
-
-  logForm(){
-this.navCtrl.push(HomeSchoolPage);
-  }
-
 
 }
