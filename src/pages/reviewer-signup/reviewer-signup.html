@@ -14,5 +14,30 @@
 
 
 <ion-content padding>
+<form (ngSubmit)="logForm()">
+ <ion-item>
+        <ion-label>First name</ion-label>
+      <ion-input input type="text" name="First name" ngModel> </ion-input>
+      </ion-item>
 
+      <ion-item>
+<ion-label> Last name</ion-label>
+<ion-input input type="text" name="Last name" ngModel> </ion-input>
+      </ion-item>
+
+      <ion-item>
+<ion-label> Email </ion-label>
+<ion-input input type="Email" name="Email" ngModel> </ion-input>
+      </ion-item>
+
+      <ion-item>
+<ion-label> Password </ion-label>
+<ion-input input type="Password" name="Password" ngModel> </ion-input>
+      </ion-item>
+
+      
+    
+            <button ion-button type="submit" block> Submit </button>
+
+</form>
 </ion-content>

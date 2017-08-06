@@ -8,7 +8,9 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SignupPage} from '../pages/signup/signup';
 import { InstitutionSignupPage} from '../pages/institution-signup/institution-signup';
-import { ReviewerSignupPage} from '../pages/reviewer-signup/reviewer-signup'
+import { ReviewerSignupPage} from '../pages/reviewer-signup/reviewer-signup';
+import { HomeSchoolPage } from '../pages/home-school/home-school';
+import { HomeReviewerPage } from '../pages/home-reviewer/home-reviewer';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,10 @@ import { ReviewerSignupPage} from '../pages/reviewer-signup/reviewer-signup'
     HomePage,
     SignupPage,
     InstitutionSignupPage,
-    ReviewerSignupPage
+    ReviewerSignupPage,
+    HomeReviewerPage,
+    HomeSchoolPage
+
 
   ],
   imports: [
@@ -29,7 +34,9 @@ import { ReviewerSignupPage} from '../pages/reviewer-signup/reviewer-signup'
     HomePage,
     SignupPage,
     ReviewerSignupPage,
-    InstitutionSignupPage
+    InstitutionSignupPage,
+    HomeReviewerPage,
+    HomeSchoolPage
   ],
   providers: [
     StatusBar,
