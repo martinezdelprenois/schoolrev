@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+
+import { HomeReviewerPage } from '../home-reviewer/home-reviewer';
+
 /**
  * Generated class for the ReviewerSignupPage page.
  *
@@ -20,6 +23,10 @@ export class ReviewerSignupPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ReviewerSignupPage');
+  }
+
+  logForm(){
+  this.navCtrl.push('HomeReviewerPage');
   }
 
 }
