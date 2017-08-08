@@ -26,7 +26,7 @@ export class ReviewerSignupPage {
   }
 
   logForm(){
-  this.navCtrl.push('HomeReviewerPage');
+  this.navCtrl.push(HomeReviewerPage);
   }
 
 }

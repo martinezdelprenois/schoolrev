@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { SocialSharing } from '@ionic-native/social-sharing';
+
 /**
  * Generated class for the HomeReviewerPage page.
  *
@@ -15,11 +17,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class HomeReviewerPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private socialSharing: SocialSharing) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomeReviewerPage');
+  }
+
+    regularShare(){
+   
+    this.socialSharing.share("Testing, sharing this from inside an app I'm building right now", null, null, null); 
   }
 
 }
