@@ -14,6 +14,37 @@
 
 
 <ion-content padding>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<ion-searchbar
+  [(ngModel)]="myInput"
+  [showCancelButton]="shouldShowCancel"
+  (ionInput)="onInput($event)"
+  (ionCancel)="onCancel($event)">
+</ion-searchbar>
+
+<ion-label> Education Level </ion-label>
+<ion-select placeholder="pre-school" [(ngModel)]="edu-level" [ngModelOptions]="{standalone: true}">
+    <ion-option value="pre-school">Pre-school</ion-option>
+    <ion-option value="primary">Primary</ion-option>
+    <ion-option value="sec">Secondary</ion-option>
+    <ion-option value="uni">University</ion-option>
+
+  </ion-select>
+
+  <ion-label> Category </ion-label>
+  <ion-select placeholder="Private"[(ngModel)]="cat" [ngModelOptions]="{standalone: true}">
+    <ion-option value="pri">Private</ion-option>
+    <ion-option value="gov">Government</ion-option>
+    <ion-option value="int">International</ion-option>
+    
+
+  </ion-select>
 
 </ion-content>
 
