@@ -12,6 +12,9 @@ import { InstitutionSignupPage} from '../pages/institution-signup/institution-si
 import { ReviewerSignupPage} from '../pages/reviewer-signup/reviewer-signup';
 import { HomeSchoolPage } from '../pages/home-school/home-school';
 import { HomeReviewerPage } from '../pages/home-reviewer/home-reviewer';
+import { LoginPage }        from '../pages/login/login';
+import { ReviewerLoginPage } from '../pages/reviewer-login/reviewer-login';
+import { SchoolLoginPage }   from '../pages/school-login/school-login';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { HomeReviewerPage } from '../pages/home-reviewer/home-reviewer';
     InstitutionSignupPage,
     ReviewerSignupPage,
     HomeReviewerPage,
-    HomeSchoolPage
+    HomeSchoolPage,
+    LoginPage,
+    SchoolLoginPage,
+    ReviewerLoginPage
 
 
   ],
@@ -37,7 +43,10 @@ import { HomeReviewerPage } from '../pages/home-reviewer/home-reviewer';
     ReviewerSignupPage,
     InstitutionSignupPage,
     HomeReviewerPage,
-    HomeSchoolPage
+    HomeSchoolPage,
+    LoginPage,
+    SchoolLoginPage,
+    ReviewerLoginPage,
   ],
   providers: [
     StatusBar,
