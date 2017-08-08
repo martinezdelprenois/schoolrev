@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-
 import { HomeReviewerPage } from '../home-reviewer/home-reviewer';
 
 /**
- * Generated class for the ReviewerSignupPage page.
+ * Generated class for the ReviewerLoginPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
@@ -13,20 +12,20 @@ import { HomeReviewerPage } from '../home-reviewer/home-reviewer';
 
 @IonicPage()
 @Component({
-  selector: 'page-reviewer-signup',
-  templateUrl: 'reviewer-signup.html',
+  selector: 'page-reviewer-login',
+  templateUrl: 'reviewer-login.html',
 })
-export class ReviewerSignupPage {
+export class ReviewerLoginPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ReviewerSignupPage');
+    console.log('ionViewDidLoad ReviewerLoginPage');
   }
 
-  logForm(){
-  this.navCtrl.push(HomeReviewerPage);
+  RevLogin(){
+this.navCtrl.push(HomeReviewerPage);
   }
 
 }

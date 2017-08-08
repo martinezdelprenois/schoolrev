@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { InstitutionSignupPage} from '../institution-signup/institution-signup';
 import { ReviewerSignupPage} from '../reviewer-signup/reviewer-signup';
+import { LoginPage } from '../login/login';
 
 /**
  * Generated class for the SignupPage page.
@@ -34,4 +35,7 @@ loadRevSignup(){
 	this.navCtrl.push(ReviewerSignupPage);
 }
 
+loadLogin(){
+	this.navCtrl.push(LoginPage);
+}
 }

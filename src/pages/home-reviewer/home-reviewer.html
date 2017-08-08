@@ -7,12 +7,78 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>HomeReviewer</ion-title>
+    <ion-title>Search School</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<ion-searchbar
+  [(ngModel)]="myInput"
+  [showCancelButton]="shouldShowCancel"
+  (ionInput)="onInput($event)"
+  (ionCancel)="onCancel($event)">
+</ion-searchbar>
+
+<ion-label> Education Level </ion-label>
+<ion-select placeholder="pre-school" [(ngModel)]="edu-level" [ngModelOptions]="{standalone: true}">
+    <ion-option value="pre-school">Pre-school</ion-option>
+    <ion-option value="primary">Primary</ion-option>
+    <ion-option value="sec">Secondary</ion-option>
+    <ion-option value="uni">University</ion-option>
+
+  </ion-select>
+
+  <ion-label> Category </ion-label>
+  <ion-select placeholder="Private"[(ngModel)]="cat" [ngModelOptions]="{standalone: true}">
+    <ion-option value="pri">Private</ion-option>
+    <ion-option value="gov">Government</ion-option>
+    <ion-option value="int">International</ion-option>
+    
+
+  </ion-select>
 
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+
+
+
+     <button ion-button icon-only menuToggle padding-left>
+      <ion-icon name="home"></ion-icon>
+
+    </button>
+
+          <button ion-button icon-only menuToggle padding-left>
+      <ion-icon name="chatbubbles"></ion-icon>
+    
+    </button>
+
+    
+        <button ion-button icon-only menuToggle padding-left>
+      <ion-icon name="map"></ion-icon>
+    
+    </button>
+
+      <button ion-button icon-only menuToggle padding-left (click)="regularShare()">
+      <ion-icon name="share-alt"></ion-icon>
+    
+    </button>
+
+
+      <button ion-button icon-only menuToggle padding-left>
+      <ion-icon name="exit"></ion-icon>
+    
+    </button>
+
+  </ion-toolbar>
+</ion-footer>
