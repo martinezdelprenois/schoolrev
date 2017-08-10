@@ -28,7 +28,7 @@
   (ionInput)="onInput($event)"
   (ionCancel)="onCancel($event)">
 </ion-searchbar>
-
+<ion-item>
 <ion-label> Education Level </ion-label>
 <ion-select placeholder="pre-school" [(ngModel)]="edu-level" [ngModelOptions]="{standalone: true}">
     <ion-option value="pre-school">Pre-school</ion-option>
@@ -37,16 +37,18 @@
     <ion-option value="uni">University</ion-option>
 
   </ion-select>
-
+  </ion-item>
+<br>
+<ion-item>
   <ion-label> Category </ion-label>
-  <ion-select placeholder="Private"[(ngModel)]="cat" [ngModelOptions]="{standalone: true}">
+  <ion-select placeholder="Private" [(ngModel)]="catt" [ngModelOptions]="{standalone: true}">
     <ion-option value="pri">Private</ion-option>
     <ion-option value="gov">Government</ion-option>
     <ion-option value="int">International</ion-option>
     
 
   </ion-select>
-
+</ion-item>
 </ion-content>
 
 <ion-footer>
