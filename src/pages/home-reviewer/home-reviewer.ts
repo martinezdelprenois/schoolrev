@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { SocialSharing } from '@ionic-native/social-sharing';
 
+import { ReviewerAccountPage } from '../reviewer-account/reviewer-account';
+
 /**
  * Generated class for the HomeReviewerPage page.
  *
@@ -27,6 +29,10 @@ export class HomeReviewerPage {
     regularShare(){
    
     this.socialSharing.share("Testing, sharing this from inside an app I'm building right now", null, null, null); 
+  }
+
+  account(){
+this.navCtrl.push(ReviewerAccountPage);
   }
 
 }
