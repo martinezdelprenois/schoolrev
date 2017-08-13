@@ -17,6 +17,8 @@ import { ReviewerLoginPage } from '../pages/reviewer-login/reviewer-login';
 import { SchoolLoginPage }   from '../pages/school-login/school-login';
 import { ReviewerAccountPage } from '../pages/reviewer-account/reviewer-account';
 import { AccountEditPage } from '../pages/account-edit/account-edit';
+import { SchoolAccountPage } from '../pages/school-account/school-account';
+import { SchoolEditPage } from '../pages/school-edit/school-edit';
 @NgModule({
   declarations: [
     MyApp,
@@ -30,7 +32,9 @@ import { AccountEditPage } from '../pages/account-edit/account-edit';
     SchoolLoginPage,
     ReviewerLoginPage,
     ReviewerAccountPage,
-    AccountEditPage
+    AccountEditPage,
+    SchoolAccountPage,
+    SchoolEditPage
 
 
 
@@ -52,7 +56,9 @@ import { AccountEditPage } from '../pages/account-edit/account-edit';
     SchoolLoginPage,
     ReviewerLoginPage,
     ReviewerAccountPage,
-    AccountEditPage
+    AccountEditPage,
+    SchoolAccountPage,
+    SchoolEditPage
   ],
   providers: [
     StatusBar,

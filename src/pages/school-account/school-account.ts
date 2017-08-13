@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { SchoolAccountPage } from '../school-account/school-account';
-
+import { SchoolEditPage } from '../school-edit/school-edit';
 /**
- * Generated class for the HomeSchoolPage page.
+ * Generated class for the SchoolAccountPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
@@ -12,20 +11,20 @@ import { SchoolAccountPage } from '../school-account/school-account';
 
 @IonicPage()
 @Component({
-  selector: 'page-home-school',
-  templateUrl: 'home-school.html',
+  selector: 'page-school-account',
+  templateUrl: 'school-account.html',
 })
-export class HomeSchoolPage {
+export class SchoolAccountPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomeSchoolPage');
+    console.log('ionViewDidLoad SchoolAccountPage');
   }
 
-  account(){
-  this.navCtrl.push(SchoolAccountPage);
+  edit(){
+  this.navCtrl.push(SchoolEditPage);
   }
 
 }
