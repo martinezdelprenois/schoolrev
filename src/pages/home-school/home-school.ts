@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SocialSharing } from '@ionic-native/social-sharing';
 
 import { SchoolAccountPage } from '../school-account/school-account';
 
@@ -17,7 +18,7 @@ import { SchoolAccountPage } from '../school-account/school-account';
 })
 export class HomeSchoolPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private socialSharing: SocialSharing) {
   }
 
   ionViewDidLoad() {
@@ -27,5 +28,8 @@ export class HomeSchoolPage {
   account(){
   this.navCtrl.push(SchoolAccountPage);
   }
-
+share(){
+   
+    this.socialSharing.share("Testing, sharing this from inside an app I'm building right now", null, null, null); 
+  }
 }

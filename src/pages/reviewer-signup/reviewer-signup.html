@@ -14,7 +14,15 @@
 
 
 <ion-content padding>
-<form (ngSubmit)="logForm()">
+
+<ion-card>
+
+  <ion-card-header>
+    Sign up and get started
+  </ion-card-header>
+
+  <ion-card-content>
+    <form (ngSubmit)="logForm()">
  <ion-item>
        
       <ion-input placeholder="First name"input type="text" name="First name" ngModel> </ion-input>
@@ -40,4 +48,8 @@
             <button ion-button type="submit" block> Submit </button>
 
 </form>
+  </ion-card-content>
+
+</ion-card>
+
 </ion-content>
